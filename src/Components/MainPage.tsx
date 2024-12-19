@@ -1,7 +1,6 @@
 import {
   GamepadUiView,
   RequiredProps,
-  TTButton,
   TVNode,
   UiViewProps,
 } from "@efb/efb-api";
@@ -23,28 +22,32 @@ export class MainPage extends GamepadUiView<HTMLDivElement, MainPageProps> {
     return (
       <div
         ref={this.gamepadUiViewRef}
-        class="sample-page"
+        class="main-page-container"
         style={`--color: ${this.props.color}`}
       >
         <div class="header">
-          <TTButton
-            key="Go back"
-            type="secondary"
-            callback={(): void => {
-              this.props.appViewService.goBack();
-            }}
-          />
-          <h2>{this.props.title}</h2>
+          <h2>Descent Calculator</h2>
+          <p>
+            Get an approximate Top of Descent (TOD) value by inputting your
+            altitude, speed and wind data.
+          </p>
         </div>
 
         <div class="content">
-          <TTButton
+          <div class={"descent-calc-form"}>
+            <p>Item 1</p>
+            <p>Item 2</p>
+            <p>Item 3</p>
+            <p>Item 4</p>
+            <p>Item 5</p>
+            <p>Item 6</p>
+          </div>
+          {/* <TTButton
             key="Open page 1"
             callback={(): void => {
               console.log("MainPage");
-              // this.props.appViewService.open("MainPage");
             }}
-          />
+          /> */}
         </div>
       </div>
     );

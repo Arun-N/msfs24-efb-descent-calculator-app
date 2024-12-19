@@ -35,7 +35,11 @@ class TemplateAppView extends AppView<RequiredProps<AppViewProps, "bus">> {
    */
   protected registerViews(): void {
     this.appViewService.registerPage("MainPage", () => (
-      <MainPage appViewService={this.appViewService} color="#7f8fa6" title="Descent Calculator" />
+      <MainPage
+        appViewService={this.appViewService}
+        color="#0C0C0C"
+        title="Descent Calculator"
+      />
     ));
   }
 

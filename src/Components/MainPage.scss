@@ -1,5 +1,18 @@
 .ui-view.page {
-  .sample-page {
+  p {
+    color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+
+  .main-page-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,22 +21,27 @@
     width: 100%;
     height: 100%;
 
-    padding: 10vh 10vw;
+    padding: 10vh 2em 2em 2em;
     box-sizing: border-box;
 
     background-color: var(--color);
 
     > .header {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 100%;
 
-      margin-bottom: 10vh;
-
       > h2 {
-        color: white;
+        font-size: 2.3em;
+        text-align: center;
+      }
+
+      > p {
+        text-align: center;
+        margin-top: 0.45em;
+        line-height: 1.5;
       }
     }
 
@@ -34,6 +52,23 @@
 
       width: 100%;
       height: 30%;
+
+      .descent-calc-form {
+        border: 1px solid white;
+        border-radius: 12px;
+        padding: 1em 1.5em;
+        margin-top: 1em;
+      }
+    }
+
+    > hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #abb6c77a;
+      margin: 1em 0;
+      padding: 0;
+      width: 100%;
     }
   }
 }
