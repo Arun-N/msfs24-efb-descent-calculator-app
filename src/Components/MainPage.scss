@@ -1,0 +1,39 @@
+.ui-view.page {
+  .sample-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 10vh 10vw;
+    box-sizing: border-box;
+
+    background-color: var(--color);
+
+    > .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      width: 100%;
+
+      margin-bottom: 10vh;
+
+      > h2 {
+        color: white;
+      }
+    }
+
+    > .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      width: 100%;
+      height: 30%;
+    }
+  }
+}
