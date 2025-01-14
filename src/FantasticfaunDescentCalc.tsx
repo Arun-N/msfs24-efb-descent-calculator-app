@@ -12,7 +12,7 @@ import {
 import { FSComponent, VNode } from "@microsoft/msfs-sdk";
 import { MainPage } from "./Components/MainPage";
 
-import "./TemplateApp.scss";
+import "./FantasticfaunDescentCalc.scss";
 
 /**
  * BASE_URL is a global var defined in build.js
@@ -21,7 +21,7 @@ import "./TemplateApp.scss";
  */
 declare const BASE_URL: string;
 
-class TemplateAppView extends AppView<RequiredProps<AppViewProps, "bus">> {
+class FantasticfaunDescentCalcView extends AppView<RequiredProps<AppViewProps, "bus">> {
   /**
    * Optional property
    * Default view key to show if using AppViewService
@@ -91,7 +91,7 @@ class TemplateAppView extends AppView<RequiredProps<AppViewProps, "bus">> {
   }
 }
 
-class TemplateApp extends App {
+class FantasticfaunDescentCalc extends App {
   /**
    * Required getter for friendly app-name.
    * Used by the EFB as App's name shown to the user.
@@ -138,7 +138,7 @@ class TemplateApp extends App {
    * @returns Promise<void>
    */
   public async install(_props: AppInstallProps): Promise<void> {
-    Efb.loadCss(`${BASE_URL}/TemplateApp.css`);
+    Efb.loadCss(`${BASE_URL}/FantasticfaunDescentCalc.css`);
     return Promise.resolve();
   }
 
@@ -156,12 +156,12 @@ class TemplateApp extends App {
   /*
    * @returns {AppView} created above
    */
-  public render(): TVNode<TemplateAppView> {
-    return <TemplateAppView bus={this.bus} />;
+  public render(): TVNode<FantasticfaunDescentCalcView> {
+    return <FantasticfaunDescentCalcView bus={this.bus} />;
   }
 }
 
 /**
  * App definition to be injected into EFB
  */
-Efb.use(TemplateApp);
+Efb.use(FantasticfaunDescentCalc);

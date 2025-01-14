@@ -16,7 +16,7 @@ const env = {
 };
 
 const baseConfig = {
-  entryPoints: ["src/TemplateApp.tsx"],
+  entryPoints: ["src/FantasticfaunDescentCalc.tsx"],
   keepNames: true,
   bundle: true,
   outdir: "dist",
